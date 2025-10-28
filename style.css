@@ -1,0 +1,274 @@
+/* إعداد الخطوط والأساسيات */
+@font-face {
+  font-family: 'MyFont';
+  src: url('fonts/GHAITHSANS-Bold.otf') format('truetype');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'myfont', sans-serif;
+}
+p, span, button, ul, li, .categories{
+  font-family: 'Cairo', sans-serif;
+}
+.price, .tag{
+    font-family: 'myfont', sans-serif;
+}
+
+body {
+  background-color: #f9fafc;
+  color: #1b2b3a;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+/* الشريط العلوي */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  padding-right: 80px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+.logo {
+  position: absolute;       /* Position relative to header */
+  top: 10px;                /* Distance from top */
+  right: 15px;              /* Distance from right */
+  width: 80px;              /* Logo width */
+  height: 80px;             /* Logo height */
+  object-fit: contain;      /* Keep aspect ratio */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5460ac;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #2ca5a0;
+}
+
+.cart-icon {
+  font-size: 22px;
+  color: #5460ac;
+}
+
+/* الصفحة الرئيسية */
+
+.wellcome {
+  text-align: center;
+  margin: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.wellcome p{
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #253a5c;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.wellcome p:hover {
+  background-color: #f1f3f7;
+}
+
+.title1{
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 50px;
+  margin-bottom: 60px;
+  color: #002d45;
+}
+.title1 h1{
+    margin: 20px;
+    background: linear-gradient(to right, #12baa9, #5460ac); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 80px; 
+    font-weight: bold;
+}
+.title1 h2{
+    margin: 20px;
+}
+
+.about{
+    text-align: center;
+    margin: 10px;
+}
+.about p{
+    margin: 5px;
+    font-size: 16px;
+    color: #5460ac;
+    font-weight: 600;
+}
+
+.start_button {
+  text-align: center;
+  margin: 40px;
+}
+.start_button a {
+  background: linear-gradient(to right, #5460ac, #12baa9);
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #fdfeff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.start_button a:hover {
+   background: linear-gradient(to right, #12baa9, #5460ac);
+   transition: 0.5s;
+}
+
+
+/* العنوان الرئيسي */
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin: 30px 0 10px;
+  color: #002d45;
+}
+
+/* زر التصنيفات */
+.categories {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.categories a {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #253a5c;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.categories a:hover {
+  background-color: #f1f3f7;
+}
+
+/* حاوية البطاقات */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 40px 60px;
+}
+
+/* تصميم البطاقة */
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* صورة اللعبة */
+.image-box {
+  width: 100%;
+  height: 160px;
+  border-radius: 0 0 15px 15px;
+}
+
+/* محتوى البطاقة */
+.card-info {
+  padding: 15px;
+}
+.card-info h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.card-info p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.card-info .details {
+  font-size: 13px;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.price {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #009c93;
+}
+
+/* وسم اللون */
+.tag {
+  position: absolute;
+  top: 135px;
+  right: 0;
+  color: #fff;
+  padding: 6px 25px;
+  border-radius: 0 0 0 10px;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* زر "ضعه في السلة" */
+.add-btn {
+  position: absolute;
+  top: 115px;
+  right: 50%;
+  transform: translateX(50%) translateY(10px);
+  background-color: #7b63b4;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card:hover .add-btn {
+  opacity: 1;
+  transform: translateX(50%) translateY(-8px);
+}
+
+/* ألوان محددة للبطاقات */
+.sky .image-box {
+  background-color: #a6b8e2;
+}
+.galaxy .image-box {
+  background-color: #a6b8e2;
+}
+.sky .tag {
+  background-color: #3e83b9;
+}
+.galaxy .tag {
+  background-color: #29b3a7;
+}
