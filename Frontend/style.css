@@ -1,18 +1,25 @@
 /* إعداد الخطوط والأساسيات */
-@font-face {
-  font-family: 'MyFont';
-  src: url('fonts/GHAITHSANS-Bold.otf') format('truetype');
-}
+  @font-face {
+    font-family: 'MyFont';
+    src: url('fonts/GHAITHSANS-Bold.otf') format('truetype');
+  }
 
-h1, h2, h3, h4 {
-  font-family: 'myfont', sans-serif;
-}
-p, span, button, ul, li, .categories{
-  font-family: 'Cairo', sans-serif;
-}
-.price, .tag{
+  h1, h2, h3, h4 {
     font-family: 'myfont', sans-serif;
-}
+  }
+  p, span, button, ul, li, .categories{
+    font-family: 'Cairo', sans-serif;
+  }
+  .price, .tag{
+      font-family: 'myfont', sans-serif;
+  }
+  a {
+    font-family: 'Cairo', sans-serif;
+    text-decoration: none;
+    color: #5460ac;
+    transition: 0.2s;
+    font-size: 14px;
+  }
 
 body {
   background-color: #f9fafc;
